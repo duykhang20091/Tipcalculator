@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="16"
+
+        android:background="@color/amount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="16"
+        android:background="@color/amount"
+        android:elevation="4dp"
+        android:padding="12dp"
+        tools:hint="@string/enter_amount" />
+
+    <TextView
+        android:id="@+id/percentLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/percentSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="12"
+        android:background="@color/colorAccent"
+        android:max="30"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/tipLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/da"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="12"
+        android:background="@color/da"
+        android:elevation="4dp"
+        android:gravity="fill_horizontal"
+        android:padding="12dp" />
+
+</GridLayout>
